@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_uni"
+        android:icon="@drawable/ic_university"
+        android:title="University" />
+
+    <item
+        android:id="@+id/navigation_lecturer"
+        android:icon="@drawable/ic_lecture"
+        android:title="Lecturer" />
+
+    <item
+        android:id="@+id/navigation_canteen"
+        android:icon="@drawable/ic_canteen"
+        android:title="Canteen" />
+
+    <item
+        android:id="@+id/navigation_dorm"
+        android:icon="@drawable/ic_dorm"
+        android:title="Dormitory" />
+
+    <item
+        android:id="@+id/navigation_post"
+        android:icon="@drawable/ic_post"
+        android:title="Post" />
+
+</menu>

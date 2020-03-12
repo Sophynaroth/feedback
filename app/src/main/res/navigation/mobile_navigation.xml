@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_uni">
+
+    <fragment
+        android:id="@+id/navigation_uni"
+        android:name="com.roth.cs.bottomnavigation.ui.university.UniversityFragment"
+        android:label="@string/title_uni" />
+
+    <fragment
+        android:id="@+id/navigation_lecturer"
+        android:name="com.roth.cs.bottomnavigation.ui.dashboard.DashboardFragment"
+        android:label="@string/title_lecturer"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_canteen"
+        android:name="com.roth.cs.bottomnavigation.ui.canteen.CanteenFragment"
+        android:label="@string/title_canteen" />
+    <fragment
+        android:id="@+id/navigation_dorm"
+        android:name="com.roth.cs.bottomnavigation.ui.dormitory.DormitoryFragment"
+        android:label="@string/title_dorm" />
+    <fragment
+        android:id="@+id/postFragment"
+        android:name="com.roth.cs.bottomnavigation.ui.post.PostFragment"
+        android:label="PostFragment" />
+</navigation>

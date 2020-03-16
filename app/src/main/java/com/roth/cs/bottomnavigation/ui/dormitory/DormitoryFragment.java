@@ -13,7 +13,7 @@ import com.roth.cs.bottomnavigation.R;
 public class DormitoryFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-
-        return inflater.inflate(R.layout.fragment_dormitory,null);
+        View rootView = inflater.inflate(R.layout.fragment_dormitory, container,false);
+        return rootView;
     }
 }

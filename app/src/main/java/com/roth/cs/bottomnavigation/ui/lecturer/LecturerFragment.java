@@ -31,7 +31,7 @@ public class LecturerFragment extends Fragment {
         arrayList = new ArrayList<>();
         for(int i=0 ; i<9 ; i++){
             LecturerModel model = new LecturerModel();
-            model.setUrl("https://img.mobilelegends.com/group1/M00/00/9B/Cq2Ixl329aaAeEcaAAsWyfGP-dM608.jpg");
+            model.setUrl("https://catfriendly.com/wp-content/uploads/2016/11/Cat-Lying-Down-Red-coloring-Istock-300x300.jpg");
             model.setLecturerName("Keo Saly");
             model.setMajor("Computer Science");
             model.setJobTitle("Mobile Dev");

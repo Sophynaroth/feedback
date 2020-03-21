@@ -16,7 +16,75 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/back_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="100dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/logo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/ic_group"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/logo"
+                            android:textStyle="bold"
+                            android:text="Feedback"
+                            android:gravity="center"
+                            android:textColor="#2d3b92"
+                            android:textSize="30sp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_marginLeft="70dp"
+                    android:src="@drawable/menu_icon_64"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:fontFamily="@font/ubuntu"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:text="WE WOULD LIKE YOU TO FEEDBACK TO IMPROVE OUR SCHOOL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:text="(Circle the relevant smile)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
             <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginTop="15dp"
                 android:layout_width="180dp"
                 android:layout_height="150dp"
                 android:layout_marginBottom="15dp"
@@ -56,15 +124,6 @@
                 android:layout_margin="4dp"
                 android:numStars="5"
                 android:rating="3.5" />
-
-            <TextView
-                android:fontFamily="@font/ubuntu"
-                android:layout_marginTop="10dp"
-                android:textStyle="bold"
-                android:textSize="14sp"
-                android:text="WE WOULD LIKE YOU TO FEEDBACK TO IMPROVE OUR SCHOOL"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
 
         </LinearLayout>
 
@@ -973,15 +1032,22 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
-                <EditText
-                    android:layout_marginBottom="15dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_marginTop="14dp"
                     android:layout_marginRight="15dp"
-                    android:background="@drawable/btn"
-                    android:gravity="left"
-                    android:hint="@string/hint" />
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/outlinedTextField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/label"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <Button
                     android:layout_marginRight="15dp"
@@ -992,7 +1058,7 @@
                     android:layout_marginTop="14dp"
                     android:background="@drawable/button"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"/>
+                    android:layout_height="70dp"/>
 
             </LinearLayout>
 

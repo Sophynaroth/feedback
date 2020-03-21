@@ -13,7 +13,7 @@ import com.roth.cs.bottomnavigation.R;
 public class UniversityFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-
-        return inflater.inflate(R.layout.fragment_university,null);
+        View rootView = inflater.inflate(R.layout.fragment_lecturer, container,false);
+        return rootView;
     }
 }

@@ -25,20 +25,23 @@
                 app:civ_border_width="2dp" />
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="NIPTICT"
-                android:textStyle="bold"
                 android:textColor="#153992"
                 android:textSize="18sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:textStyle="bold"
+                app:fontFamily="@font/ubuntu_medium" />
 
             <TextView
+                android:fontFamily="@font/ubuntu"
                 android:text="Computer Science"
                 android:textSize="14sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <TextView
+                android:fontFamily="@font/ubuntu"
                 android:textSize="14sp"
                 android:textStyle="bold"
                 android:textColor="#153992"
@@ -55,23 +58,946 @@
                 android:rating="3.5" />
 
             <TextView
+                android:fontFamily="@font/ubuntu"
                 android:layout_marginTop="10dp"
                 android:textStyle="bold"
                 android:textSize="14sp"
-                android:text="WE WOULD LIKE YOU TO DO FEEDBACK TO IMPROVE OUR SCHOOL"
+                android:text="WE WOULD LIKE YOU TO FEEDBACK TO IMPROVE OUR SCHOOL"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
         </LinearLayout>
 
-        <RelativeLayout
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <ImageView
+                android:layout_margin="10dp"
+                android:src="@drawable/num1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginTop="14dp"
+                android:textStyle="bold"
+                android:textColor="@color/text"
+                android:fontFamily="@font/ubuntu"
+                android:text="@string/q1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <LinearLayout
+                android:paddingLeft="@dimen/sticker"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="15dp"
+                    android:src="@drawable/ic_bad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="BAD"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="@dimen/sticker"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="15dp"
+                    android:src="@drawable/ic_average"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="AVERAGE"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="@dimen/sticker"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="15dp"
+                    android:src="@drawable/ic_good"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="GOOD"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="@dimen/sticker"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="15dp"
+                    android:src="@drawable/ic_excellent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="EXCELLENT"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="@dimen/sticker"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="15dp"
+                    android:src="@drawable/ic_awesome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:paddingTop="7dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="AWESOME"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
 
 
-        </RelativeLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
+            <ImageView
+                android:layout_margin="10dp"
+                android:src="@drawable/num2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginTop="14dp"
+                android:textStyle="bold"
+                android:textColor="@color/text"
+                android:fontFamily="@font/ubuntu"
+                android:text="@string/q2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <LinearLayout
+                android:paddingLeft="@dimen/sticker"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="15dp"
+                    android:src="@drawable/ic_bad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="BAD"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="@dimen/sticker"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="15dp"
+                    android:src="@drawable/ic_average"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="AVERAGE"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="@dimen/sticker"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="15dp"
+                    android:src="@drawable/ic_good"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="GOOD"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="@dimen/sticker"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="15dp"
+                    android:src="@drawable/ic_excellent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="EXCELLENT"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="@dimen/sticker"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="15dp"
+                    android:src="@drawable/ic_awesome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:paddingTop="7dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="AWESOME"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_margin="10dp"
+                android:src="@drawable/num3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginTop="14dp"
+                android:textStyle="bold"
+                android:textColor="@color/text"
+                android:fontFamily="@font/ubuntu"
+                android:text="@string/q3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <LinearLayout
+                android:paddingLeft="@dimen/sticker"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="15dp"
+                    android:src="@drawable/ic_bad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="BAD"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="@dimen/sticker"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="15dp"
+                    android:src="@drawable/ic_average"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="AVERAGE"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="@dimen/sticker"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="15dp"
+                    android:src="@drawable/ic_good"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="GOOD"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="@dimen/sticker"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="15dp"
+                    android:src="@drawable/ic_excellent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="EXCELLENT"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="@dimen/sticker"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="15dp"
+                    android:src="@drawable/ic_awesome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:paddingTop="7dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="AWESOME"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_margin="10dp"
+                android:src="@drawable/num4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginTop="14dp"
+                android:textStyle="bold"
+                android:textColor="@color/text"
+                android:fontFamily="@font/ubuntu"
+                android:text="@string/q4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <LinearLayout
+                android:paddingLeft="@dimen/sticker"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="15dp"
+                    android:src="@drawable/ic_bad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="BAD"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="@dimen/sticker"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="15dp"
+                    android:src="@drawable/ic_average"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="AVERAGE"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="@dimen/sticker"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="15dp"
+                    android:src="@drawable/ic_good"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="GOOD"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="@dimen/sticker"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="15dp"
+                    android:src="@drawable/ic_excellent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="EXCELLENT"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="@dimen/sticker"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="15dp"
+                    android:src="@drawable/ic_awesome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:paddingTop="7dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="AWESOME"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_margin="10dp"
+                android:src="@drawable/num5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginTop="14dp"
+                android:textStyle="bold"
+                android:textColor="@color/text"
+                android:fontFamily="@font/ubuntu"
+                android:text="@string/q5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <LinearLayout
+                android:paddingLeft="@dimen/sticker"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="15dp"
+                    android:src="@drawable/ic_bad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="BAD"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="@dimen/sticker"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="15dp"
+                    android:src="@drawable/ic_average"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="AVERAGE"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="@dimen/sticker"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="15dp"
+                    android:src="@drawable/ic_good"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="GOOD"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="@dimen/sticker"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="15dp"
+                    android:src="@drawable/ic_excellent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="EXCELLENT"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="@dimen/sticker"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="15dp"
+                    android:src="@drawable/ic_awesome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:paddingTop="7dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="AWESOME"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_margin="10dp"
+                android:src="@drawable/num6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginTop="14dp"
+                android:textStyle="bold"
+                android:textColor="@color/text"
+                android:fontFamily="@font/ubuntu"
+                android:text="@string/q6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <LinearLayout
+                android:paddingLeft="@dimen/sticker"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="15dp"
+                    android:src="@drawable/ic_bad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="BAD"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="@dimen/sticker"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="15dp"
+                    android:src="@drawable/ic_average"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="AVERAGE"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="@dimen/sticker"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="15dp"
+                    android:src="@drawable/ic_good"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="GOOD"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="@dimen/sticker"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="15dp"
+                    android:src="@drawable/ic_excellent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="EXCELLENT"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingLeft="@dimen/sticker"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:padding="15dp"
+                    android:src="@drawable/ic_awesome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:paddingTop="7dp"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="AWESOME"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_margin="10dp"
+                android:src="@drawable/num7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="100dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:fontFamily="@font/ubuntu"
+                    android:text="@string/q7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/btn"
+                    android:gravity="left"
+                    android:hint="@string/hint" />
+
+                <Button
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:textSize="14sp"
+                    android:textColor="#ffff"
+                    android:text="SUBMIT FORM"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
 
 
     </LinearLayout>

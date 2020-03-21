@@ -5,6 +5,15 @@
     <string name="title_canteen">Canteen</string>
     <string name="title_dorm">Dormitory</string>
     <string name="title_post">Post</string>
+    <string name="hint" >COMMENT HERE...</string>
+
+    <string name="q1">DOES THE SCHOOL PROVIDE ENOUGH SUPPORT?</string>
+    <string name="q2">HOW DO YOU IMPROVE THE SCHOOL?</string>
+    <string name="q3">HOW LONG DO YOU LOVE ME?</string>
+    <string name="q4">WHY DO YOU COME TO STUDY HERE?</string>
+    <string name="q5">FIND ME A GIRL FRIEND?</string>
+    <string name="q6">WHY PEOPLE IS LAZY?</string>
+    <string name="q7">WRITE SOMETHING TO IMPROVE THE SCHOOL</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LecturerDetail">
+    tools:context=".ui.lecturer.LecturerDetail">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -36,13 +36,27 @@
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_marginTop="20dp"
+
             android:gravity="center"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
+            <TextView
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:text="WE WOULD LIKE YOU TO DO FEEDBACK TO IMPROVE OUR SCHOOL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="( Circle the relevant smile )"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"/>
             <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginTop="15dp"
                 android:id="@+id/profile_image"
                 android:layout_width="180dp"
                 android:layout_height="150dp"

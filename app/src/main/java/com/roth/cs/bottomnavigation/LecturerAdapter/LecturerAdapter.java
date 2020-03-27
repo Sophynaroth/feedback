@@ -6,6 +6,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -16,15 +18,18 @@ import com.roth.cs.bottomnavigation.ui.lecturer.LecturerDetail;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class LecturerAdapter extends RecyclerView.Adapter<LecturerHolder> {
+public class LecturerAdapter extends RecyclerView.Adapter<LecturerHolder> implements Filterable {
 
     Context context;
     ArrayList<LecturerModel> arrayList;
+    List<LecturerModel> lecturerListFull;
 
     public LecturerAdapter (Context context, ArrayList<LecturerModel> arrayList){
         this.context= context;
         this.arrayList = arrayList;
+        lecturerListFull = new ArrayList<>(arrayList);
     }
     @NonNull
     @Override
@@ -57,4 +62,52 @@ public class LecturerAdapter extends RecyclerView.Adapter<LecturerHolder> {
     public int getItemCount() {
         return arrayList.size();
     }
+
+    /*search*/
+    @Override
+    public Filter getFilter() {
+        return lecturerFilter;
+    }
+
+    private Filter lecturerFilter = new Filter() {
+        @Override
+        protected FilterResults performFiltering(CharSequence constraint) {
+             List<LecturerModel> filteredList = new ArrayList<>();
+
+             if (constraint == null || constraint.length()==0){
+                 filteredList.addAll(lecturerListFull);
+             } else{
+                 String filterPatter = constraint.toString().toLowerCase().trim();
+//                 Log.e("search text", filterPatter);
+//                 if(lecturerListFull == null){
+//                     Log.e("lectureListFull is", "null");
+//                 }
+                 for (LecturerModel model : lecturerListFull){
+                     if( model.getLecturerName().toLowerCase().contains(filterPatter)){
+                         filteredList.add(model);
+                     }
+                 }
+             }
+             FilterResults results = new FilterResults();
+             results.values = filteredList;
+//             if(results == null){
+//                Log.e("The result is", "null");
+//            }else{
+//                Log.e("The result is", "not null");
+//            }
+             return results;
+        }
+
+        @Override
+        protected void publishResults(CharSequence constraint, FilterResults results) {
+            arrayList.clear();
+            arrayList.addAll((List) results.values);
+            notifyDataSetChanged();
+        }
+    };
+    /*end*/
+
+
+
+
 }

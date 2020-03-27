@@ -11,6 +11,7 @@ import com.roth.cs.bottomnavigation.ui.post.PostFragment;
 import com.roth.cs.bottomnavigation.ui.university.UniversityFragment;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
@@ -27,8 +28,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
         BottomNavigationView navigation = findViewById(R.id.nav_view);
         navigation.setOnNavigationItemSelectedListener(this);
-
-         }
+    }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {

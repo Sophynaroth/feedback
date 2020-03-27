@@ -31,6 +31,13 @@
             android:textSize="40sp" />
 
     </RelativeLayout>
+    <!--<androidx.appcompat.widget.SearchView
+        android:id="@+id/SearchView"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.SearchView>-->
     <LinearLayout
         android:layout_margin="30dp"
         android:layout_width="match_parent"
@@ -38,20 +45,29 @@
         android:orientation="horizontal"
         android:background="@drawable/custom_layout">
 
-        <EditText
-            android:textSize="10sp"
+<!--        <EditText-->
+<!--            android:id="@+id/search"-->
+<!--            android:textSize="10sp"-->
+<!--            android:background="@null"-->
+<!--            android:layout_weight="2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="    SEARCH LECTURER NAME "/>-->
+        <SearchView
+            android:id="@+id/search"
             android:background="@null"
             android:layout_weight="2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="    SEARCH LECTURER NAME "/>
-        <Button
-            android:layout_weight="5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="SEARCH"
-            android:textColor="#fff"
-            android:background="#2D3B92"/>
+            android:queryHint="SEARCH LECTURE NAME"/>
+<!--        <Button-->
+<!--            android:id="@+id/search_button"-->
+<!--            android:layout_weight="5"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="SEARCH"-->
+<!--            android:textColor="#fff"-->
+<!--            android:background="#2D3B92"/>-->
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"

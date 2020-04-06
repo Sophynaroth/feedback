@@ -1,17 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <TextView
-        android:id="@+id/text_home"
-        android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="Post"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+        android:id="@+id/header_feedback"
+        >
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_chevron_left"
+            />
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="@android:integer/config_longAnimTime"
+            >
+            <ImageView
+                android:id="@+id/feedback_logo"
+                android:padding="10dp"
+                android:layout_toRightOf="@+id/btn_float"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:src="@drawable/ic_feedback"
+                />
 
+            <TextView
+                android:gravity="center"
+                android:fontFamily="@font/ubuntu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/feedback_logo"
+                android:text="Feedback"
+                android:textColor="#2d3b92"
+                android:textSize="28sp"
+                app:fontFamily="@font/ubuntu" />
+        </LinearLayout>
+        <ImageView
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_menu"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/header_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header_bar"
+        android:orientation="horizontal"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/profile"
+            app:civ_border_width="5dp"
+            app:civ_border_color="#FFFF"
+            android:layout_marginTop="5dp"
+            />
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/raduis_text"
+            android:id="@+id/text_post"
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+                android:fontFamily="@font/ubuntu"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:hint="What is on your mind ?"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_weight="@android:integer/config_longAnimTime"
+                />
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_photo_library"
+                android:layout_marginRight="30dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_below="@+id/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerview_post">
+        </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
 </RelativeLayout>

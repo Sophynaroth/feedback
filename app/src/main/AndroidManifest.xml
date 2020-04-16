@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.post.MoreComment"></activity>
+        <activity android:name=".ui.post.ViewPostImage"></activity>
+        <activity android:name=".ui.post.MoreComment" />
         <activity android:name=".ui.post.Post" />
         <activity
             android:name=".MainActivity"

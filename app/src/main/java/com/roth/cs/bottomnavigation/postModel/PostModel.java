@@ -1,7 +1,16 @@
 package com.roth.cs.bottomnavigation.postModel;
 
 public class PostModel {
-    String time, profile, image_post, text_comment, profile_comment, user_name, status, more;
+    String time, profile, imageURL, text_comment, profile_comment, user_name, imageName, more, btn_submit_comment, comment;
+
+    public PostModel() {
+    }
+
+    public PostModel(String imageURL, String imageName) {
+        this.imageURL = imageURL;
+        this.imageName = imageName;
+    }
+
     public String getTime() {
         return time;
     }
@@ -18,12 +27,12 @@ public class PostModel {
         this.profile = profile;
     }
 
-    public String getImage_post() {
-        return image_post;
+    public String getImageURL() {
+        return imageURL;
     }
 
-    public void setImage_post(String image_post) {
-        this.image_post = image_post;
+    public void setImageURL(String imageURL) {
+        this.imageURL = imageURL;
     }
 
     public String getText_comment() {
@@ -50,12 +59,12 @@ public class PostModel {
         this.user_name = user_name;
     }
 
-    public String getStatus() {
-        return status;
+    public String getImageName() {
+        return imageName;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
+    public void setImageName(String imageName) {
+        this.imageName = imageName;
     }
 
     public String getMore() {
@@ -64,5 +73,21 @@ public class PostModel {
 
     public void setMore(String more) {
         this.more = more;
+    }
+
+    public String getBtn_submit_comment() {
+        return btn_submit_comment;
+    }
+
+    public void setBtn_submit_comment(String btn_submit_comment) {
+        this.btn_submit_comment = btn_submit_comment;
+    }
+
+    public String getComment() {
+        return comment;
+    }
+
+    public void setComment(String comment) {
+        this.comment = comment;
     }
 }

@@ -45,7 +45,7 @@
                 android:textSize="14sp" />
             <TextView
                 android:fontFamily="@font/ubuntu"
-                android:id="@+id/title"
+                android:id="@+id/imageName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/profile"
@@ -56,10 +56,10 @@
                 android:textStyle="bold" />
 
             <ImageView
-                android:id="@+id/image_post"
+                android:id="@+id/imageURL"
                 android:layout_width="match_parent"
                 android:layout_height="420dp"
-                android:layout_below="@+id/title"
+                android:layout_below="@+id/imageName"
                 android:layout_marginTop="5dp"
                 android:src="@drawable/profile" />
 
@@ -67,7 +67,7 @@
                 android:id="@+id/card_comment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/image_post">
+                android:layout_below="@id/imageURL">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -131,7 +131,7 @@
                     android:layout_marginBottom="10dp"
                     />
 
-                <ImageView
+                <ImageButton
                     android:id="@+id/btn_submit_comment"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"

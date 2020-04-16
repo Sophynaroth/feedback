@@ -97,10 +97,10 @@
             android:background="@drawable/border_caption"
             />
         <ImageView
-            android:id="@+id/image_pick"
+            android:id="@+id/set_image"
             android:layout_below="@+id/write_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="500dp"
+            android:layout_height="520dp"
             />
     </RelativeLayout>
 </LinearLayout>

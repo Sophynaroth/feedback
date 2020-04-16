@@ -10,7 +10,7 @@
         android:id="@+id/card_comment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/image_post">
+        >
 
         <RelativeLayout
             android:background="#eee9e9"
